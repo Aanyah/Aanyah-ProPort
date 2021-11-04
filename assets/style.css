@@ -12,46 +12,47 @@
 }
 
 /*body*/
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* header/nav starts */
 header {
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: var(--accent2-color);
-    background-size: cover;
+  display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: var(--prime-color); 
 }
- header h1 {
-     font-weight: bold;
-     margin: 0;
-     font-size: 50px;
-     color: var(--prime-color);
-     text-shadow: 0 0 10px rgb(12, 2, 2);
- }
 
- header nav {
-     margin: 7px 0;
- }
+header h1 {
+  /* At bigger screens create space at left of h1 on header */
+  padding-left: 50px;
+}
 
- header nav ul {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     align-items: center;
-     list-style: none;
- }
+header nav ul {
+  display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-right: 0px;
+}
 
- header nav ul li a {
-     padding: 10px 15px;
-     font-weight: lighter;
-     font-size: 20px;
-     text-shadow: 0 0 10px rgb(12, 2, 2);
-     font-weight: bold;
-     color: var(--accent-color);
+header nav ul li {
+  /*Viewport font-size to help with the responsiveness of the web page */
+  font-size: 1.8vw;
+  /* Align nave element to closely match the header h1 element*/
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  
+}
+
+/* Remove text anchor default decoreations and apply specific styles individulally*/
+header a {
+  /* Longer bootom border under the element as mockup */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid var(--prime-color);
+  color: var(--lightskyblue);
  }
 /* header/nav ends */
 
@@ -65,12 +66,114 @@ header {
 		
 }
 
+
 /* about me starts */
+.me-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: stretch;
+	margin-top: 50px;
+}
 
+.me-wrapper h2, .me-text {
+	display: inline;
 
+}
+
+.me-container {
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr repeat(3, 2fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap:10px 10px;
+}
+
+.me-title {
+	padding-top: 0px;
+	font-size: 35px;
+	padding-right: 10px;
+	border-right: 5px solid var(--accent-color);
+}
+
+.me-text {
+	padding-left: 10px;
+	/* grid-column: 2 /span 3; */
+	/* grid-row: 3 / span 2; */
+}
 /* about me ends */
 
 /* work starts */
+.work-wrapper {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.work-item.work-title {
+	padding-top: 10px;
+  font-size: 35px;
+  grid-row: 1 / span 9;
+  text-align: right;
+  padding-right: 10px;
+  border-right: 2px solid var(--accent-color)
+}
+
+.work-hori-item {
+	grid-column: 2 /span 9;
+	grid-row: 7 /span 3;
+	background-image: url("../assets/images/malandro\,\ michik.png");
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	padding-left: 0px;
+	padding-bottom: 15px;
+	text-align: left;
+	border: .25vw solid var(--accent-color);
+}
+
+.work-run-item {
+	grid-column: 3 /span 1;
+  grid-row: 7 / span 3;
+	background-image: url("../assets/images/malandro\,\ michik.png");
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	padding-left: 0px;
+  padding-bottom: 15px;
+  text-align: left;
+  border: .25vw solid var(--accent-color)
+}
+
+.work-tba-item {
+	grid-column: 4 / span 1;
+	background-image: url("../assets/images/malandro\,\ michik.png");
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	padding-left: 0px;
+	padding-bottom: 15px;
+	text-align: left;
+	border: .25vw solid var(--accent-color);
+}
+
+.span-bkgd {
+	background-color: var(--prime-color);
+  position: relative;
+  line-height: 1.5;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5%;
+  opacity: .8;
+}
+
+.span-bkgd-title {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
 
 /* work ends*/
 
