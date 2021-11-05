@@ -70,7 +70,6 @@ header a {
 /* about me starts */
 .me-wrapper {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: stretch;
@@ -82,13 +81,13 @@ header a {
 
 }
 
-.me-container {
-	width: 80%;
-	display: grid;
+/* .me-container { */
+	/* width: 80%; */
+	/* display: grid;
 	grid-template-columns: 1fr repeat(3, 2fr);
 	grid-template-rows: repeat(4, 1fr);
-	gap:10px 10px;
-}
+	gap:10px 10px; */
+/* } */
 
 .me-title {
 	padding-top: 0px;
@@ -107,13 +106,14 @@ header a {
 /* work starts */
 .work-wrapper {
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: center;
-  margin-top: 50px;
 }
 
-.work-item.work-title {
+.work-wrapper h2 {
+	display: inline;
+}
+
+
+.work-title {
 	padding-top: 10px;
   font-size: 35px;
   grid-row: 1 / span 9;
@@ -178,9 +178,13 @@ header a {
 /* work ends*/
 
 /* contact me starts */
-footer h2 {
+.footer-wrapper {
 	display: flex;
 }
+footer h2 {
+	border-right: 5px solid var(--accent-color);
+}
+
 footer div ul {
 	display: flex;
 	justify-content: space-between;
