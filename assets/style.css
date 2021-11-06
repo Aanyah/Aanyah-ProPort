@@ -12,21 +12,25 @@
 }
 
 /*body*/
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* header/nav ends */
 header {
-  display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  background-color: var(--prime-color); 
+  background-color: var(--prime-color);
+	align-items: center; 
 }
 
 header h1 {
-  /* At bigger screens create space at left of h1 on header */
   padding-left: 50px;
 }
 
 header nav ul {
-  display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+  display: flex; 
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
@@ -35,18 +39,14 @@ header nav ul {
 }
 
 header nav ul li {
-  /*Viewport font-size to help with the responsiveness of the web page */
   font-size: 1.8vw;
-  /* Align nave element to closely match the header h1 element*/
   padding: 10px 15px;
   margin-top: 5px;
   margin-bottom: 10px;
   
 }
 
-/* Remove text anchor default decoreations and apply specific styles individulally*/
 header a {
-  /* Longer bootom border under the element as mockup */
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
@@ -58,129 +58,116 @@ header a {
 
 /*section-titles & border style starts*/
 .banner {
-
 	height: 100px;
 	background-image: url("../assets/images/\(346\)\ Pinterest.png");
 	background-size: cover;
 	background-attachment: fixed;
-		
+	
 }
 
 
 /* about me starts */
-.me-wrapper {
+.me-parent {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-direction: row;
 	align-items: stretch;
 	margin-top: 50px;
+	flex-wrap: wrap;
 }
-
-.me-wrapper h2, .me-text {
-	display: inline;
-
-}
-
-/* .me-container { */
-	/* width: 80%; */
-	/* display: grid;
-	grid-template-columns: 1fr repeat(3, 2fr);
-	grid-template-rows: repeat(4, 1fr);
-	gap:10px 10px; */
-/* } */
 
 .me-title {
-	padding-top: 0px;
-	font-size: 35px;
-	padding-right: 10px;
-	border-right: 5px solid var(--accent-color);
+	width: 20%;
+	border-bottom: 5px solid var(--accent-color);
+	text-align: center;
+	font-size: 24px;
 }
 
 .me-text {
-	padding-left: 10px;
-	/* grid-column: 2 /span 3; */
-	/* grid-row: 3 / span 2; */
+	padding: 10px;
+	text-align: center;
 }
 /* about me ends */
 
 /* work starts */
-.work-wrapper {
+.work-parent {
 	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
-
-.work-wrapper h2 {
-	display: inline;
-}
-
 
 .work-title {
-	padding-top: 10px;
-  font-size: 35px;
-  grid-row: 1 / span 9;
-  text-align: right;
-  padding-right: 10px;
-  border-right: 2px solid var(--accent-color)
+	width: 20%;
+	height: 100px;
+	border-bottom: 5px solid var(--accent-color);
+	text-align: center;
+	padding: 50px 0;
+	font-size: 24px;
 }
 
-.hori {
-	background-image: url("../assets/images/malandro\,\ michik.png");
-	background-size: cover;
+.projects {
 	display: flex;
-	align-items: flex-end;
-	padding-left: 0px;
-	padding-bottom: 15px;
-	text-align: left;
-	border: .25vw solid var(--accent-color);
+	flex-wrap: wrap;
+	width: 70%;
+	justify-content: space-evenly;
+	
+
+}
+#hori {
+	position: relative;
+
+}
+#hori img {
+	height: fit-content;
 }
 
-.run {
-	background-image: url("../assets/images/malandro\,\ michik.png");
-	background-size: cover;
-	display: flex;
-	align-items: flex-end;
-	padding-left: 0px;
-  padding-bottom: 15px;
-  text-align: left;
-  border: .25vw solid var(--accent-color)
-}
-.tba {
-	background-image: url("../assets/images/malandro\,\ michik.png");
-	background-size: cover;
-	display: flex;
-	align-items: flex-end;
-	padding-left: 0px;
-	padding-bottom: 15px;
-	text-align: left;
-	border: .25vw solid var(--accent-color);
+.items {
+	position: relative;	
+
 }
 
-.work-wrapper h3 {
-	background-color: var(--prime-color);
-  position: relative;
-  line-height: 1.5;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 5%;
-  opacity: .8;
+.projects img {
+	width: 100%;
+	height: 210px;
+	border: 5px solid var(--accent-color);
+	position: relative;
 }
 
-
+.mini-text {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		background-color:var(--prime-color);
+		color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+		opacity: 70%;
+}
 /* work ends*/
 
 /* contact me starts */
-.footer-wrapper {
+.contact-parent {
 	display: flex;
-}
-footer h2 {
-	border-right: 5px solid var(--accent-color);
+	justify-content: flex-start;
+	flex-direction: row;
+	align-items: stretch;
+	margin-top: 50px;
+	flex-wrap: wrap;
 }
 
-footer div ul {
+.contact-title {
+	width: 22%;
+	border-bottom: 5px solid var(--accent-color);
+	text-align: center;
+	font-size: 24px;
+}
+.contact-text {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: row;
-	padding: 5px;
-	list-style: none;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 19px;
 }
 /* contact me ends */

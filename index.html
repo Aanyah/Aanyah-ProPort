@@ -10,10 +10,10 @@
 
 <body>
   <!-- nav starts-->
-  <header class="span-bkgd-title">
+  <header>
     <h1>Aanyah L. Cook</h1>
     <nav>
-      <ul class="nav-effect">
+      <ul>
         <li>
           <a href="#about-me">About Me</a>
         </li>
@@ -22,10 +22,6 @@
         </li>
         <li>
           <a href="#contact-me">Contact Me</a>
-        </li>
-        <li>
-          <!--??is resume a download or link to diff page like priv policy??-->
-          <a href="#resume">Resume</a>
         </li>
       </ul>
     </nav>
@@ -36,9 +32,10 @@
   <!--image as bkgd-->
 
   <!--about me starts-->
-  <section id="about-me" class="me-wrapper">
-    <!-- <div class="me-container"></div> grid container -->
-    <h2 class="me-title">About Me</h2>
+  <section id="about-me" class="me-parent">
+    <div class="me-title">
+      <h2>About Me</h2>
+    </div>
     <div class="me-text">
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
         dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
@@ -56,64 +53,71 @@
   </section>
   <!-- about me ends -->
   <br>
-  <br>
   <!-- work starts-->
-  <section id="work" class="work-wrapper">
-    <!-- <div class="work-container"> -->
-        <h2 class="work-title">Work</h2>
-      <div style="cursor: pointer;" class="hori">
-          <h3>Horiseon</h3>
-          <a href="https://aanyah.github.io/Hori-Refactor-WkCh1/">
-            <!-- <img src="./assets/images/malandro, michik.png" alt=""> -->
-          </a>
+  <section id="work" class="work-parent">
+    <div class="work-title">
+      <h2>Work</h2>
+    </div>
+    <div class="projects">
+      <div id="hori" class="items">
+        <img src="./assets/images/malandro, michik.png" alt="">
+          <a href=" https://aanyah.github.io/Hori-Refactor-WkCh1/"></a>
+        <div class="mini-text">
+            <h4>Horiseon</h4>
+            <p>HTML/CSS</p>
+        </div>    
       </div>
-      <div style="cursor: pointer;" class="run">
-        <!--more-->
-          <h3>Run-Buddy</h3>
-          <a href="">
-            <!-- <img src="./assets/images/malandro, michik.png" alt=""> -->
-          </a>
+      <div class="items">
+        <img src="./assets/images/malandro, michik.png" alt="">
+        <div class="mini-text">
+          <h4>RUN-BUDDY</h4>
+          <p>HTML/CSS</p>
+      </div>    
       </div>
-      <div class="tba">
-          <h3>TBA</h3>
-          <a href="">
-            <!-- <img src="./assets/images/malandro, michik.png" alt=""> -->
-          </a>
+      <div class="items">
+         <img src="./assets/images/malandro, michik.png" alt=""> <div class="mini-text">
+          <h4>TBA</h4>
+          <!-- <p>coming sooon</p> -->
+      </div>    
+       
       </div>
-      <div class="tba">
-          <h3>TBA</h3>
-          <a href="">
-            <!-- <img src="./assets/images/malandro, michik.png" alt=""> -->
-          </a>
+      <div class="items">
+         <img src="./assets/images/malandro, michik.png" alt="">
+         <div class="mini-text">
+          <h4>TBA</h4>
+          <!-- <p> coming soon</p> -->
+      </div>    
+       
       </div>
-      <div class="tba">
-          <h3>TBA</h3>
-          <a href="">
-            <!-- <img src="./assets/images/malandro, michik.png" alt=""> -->
-          </a>
+      <div class="items">
+        <img src="./assets/images/malandro, michik.png" alt="">
+        <div class="mini-text">
+          <h4>TBA</h4>
+          <!-- <p> coming soon</p> -->
+      </div>    
+      
       </div>
-    <!-- </div> -->
+    </div>
+  </section>
   </section>
   <!-- work ends-->
   <br>
-  <br>
   <!-- contact me starts-->
-  <footer id="contact-me" class="footer-wrapper">
-    <!-- <div class="footer-container"> -->
-      <h2>Contact Me</h2>
-      <div>
-        <ul>
-          <li>
-            Cell: 226-924-2665
-          </li>
-          <li>
-            Email: Aanyahc@gmail.com
-          </li>
-          <li>
-            <a href="https://github.com/Aanyah"> GitHub</a>
-          </li>
-        </ul>
+  <footer id="contact-me" class="contact-parent">
+    <div class="contact-title">
+        <h2>Contact Me</h2>
+    </div>
+    <div class="contact-text">
+      <div class="cell">
+        <p>Cell: 226-924-2665 </p>
+      </div>  
+      <div class="email">
+         <p>  Email: Aanyahc@gmail.com</p>
       </div>
+      <div class="git">
+         <p><a href="https://github.com/Aanyah"> GitHub</a></p>
+      </div>
+    </div>
   </footer>
   <!--contact me ends-->
 </body>
