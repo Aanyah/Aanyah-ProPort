@@ -143,7 +143,6 @@ header a {
   text-align: left;
   border: .25vw solid var(--accent-color)
 }
-
 .tba {
 	background-image: url("../assets/images/malandro\,\ michik.png");
 	background-size: cover;
@@ -154,6 +153,18 @@ header a {
 	text-align: left;
 	border: .25vw solid var(--accent-color);
 }
+
+.work-wrapper h3 {
+	background-color: var(--prime-color);
+  position: relative;
+  line-height: 1.5;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5%;
+  opacity: .8;
+}
+
+
 /* work ends*/
 
 /* contact me starts */
