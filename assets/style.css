@@ -122,9 +122,7 @@ header a {
   border-right: 2px solid var(--accent-color)
 }
 
-.work-hori-item {
-	grid-column: 2 /span 9;
-	grid-row: 7 /span 3;
+.hori {
 	background-image: url("../assets/images/malandro\,\ michik.png");
 	background-size: cover;
 	display: flex;
@@ -135,9 +133,7 @@ header a {
 	border: .25vw solid var(--accent-color);
 }
 
-.work-run-item {
-	grid-column: 3 /span 1;
-  grid-row: 7 / span 3;
+.run {
 	background-image: url("../assets/images/malandro\,\ michik.png");
 	background-size: cover;
 	display: flex;
@@ -148,8 +144,7 @@ header a {
   border: .25vw solid var(--accent-color)
 }
 
-.work-tba-item {
-	grid-column: 4 / span 1;
+.tba {
 	background-image: url("../assets/images/malandro\,\ michik.png");
 	background-size: cover;
 	display: flex;
@@ -159,22 +154,6 @@ header a {
 	text-align: left;
 	border: .25vw solid var(--accent-color);
 }
-
-.span-bkgd {
-	background-color: var(--prime-color);
-  position: relative;
-  line-height: 1.5;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 5%;
-  opacity: .8;
-}
-
-.span-bkgd-title {
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
 /* work ends*/
 
 /* contact me starts */
